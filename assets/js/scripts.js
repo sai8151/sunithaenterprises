@@ -1,13 +1,3 @@
-/*===================================
-Author       : Bestwebcreator.
-Template Name: Organiq - Organic Food HTML Template
-Version      : 1.0
-===================================*/
-
-/*===================================*
-PAGE JS
-*===================================*/
-
 (function($) {
 	'use strict';
 	
@@ -68,7 +58,7 @@ PAGE JS
 			$('.alert_fixed').addClass('fixed');
 	    } else {
 	        $('header').removeClass('nav-fixed');
-			$('.alert_fixed').removeClass('fixed');
+			$('.alert_fixed').removeClass('fixed');;
 	    }
 
 	});
@@ -561,14 +551,14 @@ PAGE JS
 	});
 
 	/*Cart Page Payment option*/	
-	$('[name="payment_option"]').on('click', function(){
+	// $('[name="payment_option"]').on('click', function(){
     
-		var $value = $(this).attr('value');
+	// 	var $value = $(this).attr('value');
 	
-		$('.payment-text').slideUp();
-		$('[data-method="'+$value+'"]').slideDown();
+	// 	$('.payment-text').slideUp();
+	// 	$('[data-method="'+$value+'"]').slideDown();
 		
-	})
+	// })
 	/*==============================================================
     11. VIDEO JS
     ==============================================================*/
@@ -647,73 +637,73 @@ PAGE JS
 	/*===================================*
 	17. RATING STAR JS
 	*===================================*/
-	$(document).ready(function(){
-	  $('.star_rating span').on('click', function(){
-			var onStar = parseFloat($(this).data('value'), 10); // The star currently selected
-			var stars = $(this).parent().children('.star_rating span');
-			for (var i = 0; i < stars.length; i++) {
-				$(stars[i]).removeClass('selected');
-			}
-			for (i = 0; i < onStar; i++) {
-				$(stars[i]).addClass('selected');
-			}
-		});
-	});
+	// $(document).ready(function(){
+	//   $('.star_rating span').on('click', function(){
+	// 		var onStar = parseFloat($(this).data('value'), 10); // The star currently selected
+	// 		var stars = $(this).parent().children('.star_rating span');
+	// 		for (var i = 0; i < stars.length; i++) {
+	// 			$(stars[i]).removeClass('selected');
+	// 		}
+	// 		for (i = 0; i < onStar; i++) {
+	// 			$(stars[i]).addClass('selected');
+	// 		}
+	// 	});
+	// });
 	
 	/*===================================*
 	18. CHECKBOX CHECK THEN ADD CLASS JS
 	*===================================*/
-	$('.create-account,.different_address').hide();
-	$('#createaccount:checkbox').change(function(){
-		if($(this).is(":checked")) {
-			$('.create-account').show(300);
-		} else {
-			$('.create-account').hide(300);
-		}
-	});
-	$('#differentaddress:checkbox').change(function(){
-		if($(this).is(":checked")) {
-			$('.different_address').show(300);
-		} else {
-			$('.different_address').hide(300);
-		}
-	});
+	// $('.create-account,.different_address').hide();
+	// $('#createaccount:checkbox').change(function(){
+	// 	if($(this).is(":checked")) {
+	// 		$('.create-account').show(300);
+	// 	} else {
+	// 		$('.create-account').hide(300);
+	// 	}
+	// });
+	// $('#differentaddress:checkbox').change(function(){
+	// 	if($(this).is(":checked")) {
+	// 		$('.different_address').show(300);
+	// 	} else {
+	// 		$('.different_address').hide(300);
+	// 	}
+	// });
 	
 	/*===================================*
 	19. PRICE FILTER JS
 	*===================================*/
-	$(function() {
-		$( "#price_filter" ).slider({
-			range: true,
-			min: 0,
-			max: 200,
-			values: [ 30, 150 ],
-			slide: function( event, ui ) {
-				$( "#flt_price" ).html( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-				$( "#price_first" ).val(ui.values[ 0 ]);
-				$( "#price_second" ).val(ui.values[ 1 ]);
-			}
-		});
-		$( "#flt_price" ).html( "$" + $( "#price_filter" ).slider( "values", 0 ) + " - $" + $( "#price_filter" ).slider( "values", 1 ) );
-	});
+	// $(function() {
+	// 	$( "#price_filter" ).slider({
+	// 		range: true,
+	// 		min: 0,
+	// 		max: 200,
+	// 		values: [ 30, 150 ],
+	// 		slide: function( event, ui ) {
+	// 			$( "#flt_price" ).html( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+	// 			$( "#price_first" ).val(ui.values[ 0 ]);
+	// 			$( "#price_second" ).val(ui.values[ 1 ]);
+	// 		}
+	// 	});
+	// 	$( "#flt_price" ).html( "$" + $( "#price_filter" ).slider( "values", 0 ) + " - $" + $( "#price_filter" ).slider( "values", 1 ) );
+	// });
 	
 	/*===================================*
 	20 .List Grid JS
 	*===================================*/
-	$('.shorting_icon').on('click',function(e) {
-		if ($(this).hasClass('grid_view')) {
-			$('.shop_container').removeClass('list_view').addClass('grid_view');
-			$(this).addClass('active').siblings().removeClass('active');
-		}
-		else if($(this).hasClass('list_view')) {
-			$('.shop_container').removeClass('grid_view').addClass('list_view');
-			$(this).addClass('active').siblings().removeClass('active');
-		}
-		$(".shop_container").append('<div class="loading_pr"><div class="mfp-preloader"></div></div>');
-		setTimeout(function(){
-		  $('.loading_pr').remove();
-		}, 800);
-	});
+	// $('.shorting_icon').on('click',function(e) {
+	// 	if ($(this).hasClass('grid_view')) {
+	// 		$('.shop_container').removeClass('list_view').addClass('grid_view');
+	// 		$(this).addClass('active').siblings().removeClass('active');
+	// 	}
+	// 	else if($(this).hasClass('list_view')) {
+	// 		$('.shop_container').removeClass('grid_view').addClass('list_view');
+	// 		$(this).addClass('active').siblings().removeClass('active');
+	// 	}
+	// 	$(".shop_container").append('<div class="loading_pr"><div class="mfp-preloader"></div></div>');
+	// 	setTimeout(function(){
+	// 	  $('.loading_pr').remove();
+	// 	}, 800);
+	// });
 	
 	/*==============================================================
     21. FIT VIDEO JS
@@ -755,29 +745,29 @@ PAGE JS
 		});
 	
 		//isotope filter
-		$(document).on( "click", filter_selectors, function() {
-			$(filter_selectors).removeClass("current");
-			$(this).addClass("current");
-			var dfselector = $(this).data('filter');
-			if ($grid_selectors.hasClass("masonry")){
-				$grid_selectors.isotope({
-					itemSelector: '.grid_item',
-					layoutMode: "masonry",
-					masonry: {
-						columnWidth: '.grid_item'
-					},
-					filter: dfselector
-				});
-			} 
-			else {
-				$grid_selectors.isotope({
-					itemSelector: '.grid_item',
-					layoutMode: "fitRows",
-					filter: dfselector
-				});
-			}
-			return false;
-		});
+		// $(document).on( "click", filter_selectors, function() {
+		// 	$(filter_selectors).removeClass("current");
+		// 	$(this).addClass("current");
+		// 	var dfselector = $(this).data('filter');
+		// 	if ($grid_selectors.hasClass("masonry")){
+		// 		$grid_selectors.isotope({
+		// 			itemSelector: '.grid_item',
+		// 			layoutMode: "masonry",
+		// 			masonry: {
+		// 				columnWidth: '.grid_item'
+		// 			},
+		// 			filter: dfselector
+		// 		});
+		// 	} 
+		// 	else {
+		// 		$grid_selectors.isotope({
+		// 			itemSelector: '.grid_item',
+		// 			layoutMode: "fitRows",
+		// 			filter: dfselector
+		// 		});
+		// 	}
+		// 	return false;
+		// });
 
 		$(window).resize(function () {
 			setTimeout(function () {
@@ -841,12 +831,12 @@ PAGE JS
 	DEMO SWITCHER JS
 	*===================================*/
 	
-	$(document).ready( function() {
-		$(window).on("load", function() {
-			$('body').prepend('<div id="demo_content" class="demo_switcher"></div>');
-			$("#demo_content").load("demo.html");
-		});
-	});
+	// $(document).ready( function() {
+	// 	$(window).on("load", function() {
+	// 		$('body').prepend('<div id="demo_content" class="demo_switcher"></div>');
+	// 		$("#demo_content").load("demo.html");
+	// 	});
+	// });
 	
 	
 	
