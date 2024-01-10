@@ -1,4 +1,8 @@
-
+/*!
+Author       : Bestwebcreator.
+Template Name: Organiq - Organic Food HTML Template
+Version      : 1.0
+*/
 
 a:hover,
 .header_list > li .dropdown-item:hover, 
@@ -30,13 +34,13 @@ a:hover,
 .login_footer a:hover,
 .link_container a,
 .list_style_2 li::before {
-	color: #07d765;
+	color: #DB6C1A;
 }
 
 .btn-white,
 .btn-outline-default,
 .text_default {
-	color: #07d765 !important;
+	color: #DB6C1A !important;
 }
 
 .line-scale .line,
@@ -70,11 +74,11 @@ a:hover,
 .pricing_ribbon,
 .progress_content .progress-bar,
 .contact_info.contact_info_style2 li span {
-	background-color: #07d765;
+	background-color: #DB6C1A;
 }
 
 .bg_default {
-    background-color: #07d765 !important;
+    background-color: #DB6C1A !important;
 }
 
 .btn-default,
@@ -94,11 +98,11 @@ a:hover,
 .custome-radio input[type="radio"]:checked + .form-check-label::before,
 .owl-theme .owl-dots .owl-dot span,
 .contact_info.contact_info_style2 li span::after {
-	border-color: #07d765;
+	border-color: #DB6C1A;
 }
 
 .blog_date.style2::before {
-	border-color: #07d765 transparent transparent transparent;
+	border-color: #DB6C1A transparent transparent transparent;
 }
 
 .btn-default:hover, .btn-default.focus, .btn-default:focus,
